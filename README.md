@@ -1,6 +1,8 @@
 # ResumeIQ — AI Resume Analyzer
 
-ResumeIQ is an AI-powered resume analysis project that helps job seekers compare their resumes with job descriptions, identify skill gaps, and receive recommendations for improvement. It aims to help users understand how their resumes align with their target roles.
+## Project Description
+
+ResumeIQ is an AI-powered resume analysis project designed to help job seekers evaluate their resumes against job descriptions. It helps identify matching and missing skills, assess resume quality, and provide recommendations for improvement so that users can better understand their alignment with target job roles.
 
 ## Features
 
@@ -9,7 +11,7 @@ ResumeIQ is an AI-powered resume analysis project that helps job seekers compare
 - Resume improvement recommendations
 - Resume quality checks
 - Resume analysis history
-- Explainable ATS score interface
+- ATS score interface for understanding resume-job alignment
 
 ## Tech Stack
 
@@ -23,10 +25,10 @@ ResumeIQ is an AI-powered resume analysis project that helps job seekers compare
 
 ## Team Members
 
-| Name          |    Roll Number    |
-| Adith Lal     |    1262241515     |
-| Jestin Mathew |    1262241672     |
-| Shreee Phalke |    1272241839     |
+| Name | Roll Number |
+| Adith Lal | 1262241515 |
+| Jestin Mathew | 1262241672 |
+| Shreee Phalke | 1262241839 |
 
 ## Project Structure
 
@@ -35,77 +37,55 @@ ResumeIQ/
 ├── backend/
 │   ├── server.js
 │   ├── db.js
-│   ├── mongo.js
-│   └── .env
+│   └── mongo.js
 ├── frontend/
 │   ├── src/
-│   ├── package.json
-│   └── ...
+│   └── package.json
 ├── .gitignore
 └── README.md
 ```
 
-*The structure above highlights key files. Your actual project may contain additional files and folders.*
-
 ## Prerequisites
 
-Install the following software before running the project:
+The following software and services are required to run the application:
 
 - Node.js and npm
 - MySQL Server
-- MongoDB, if required by your backend configuration
+- MongoDB, where required by the application configuration
 - Git
 
 ## Setup and Execution Instructions
 
 ### 1. Clone the Repository
 
-Open a terminal and run:
-
 ```bash
 git clone https://github.com/adithlal23/ResumeIQ.git
 cd ResumeIQ
 ```
 
-### 2. Configure the Backend
-
-Open a terminal in the project root and run:
+### 2. Install Backend Dependencies
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside the `backend` directory and add the environment variables required by your application.
+Configure the required environment variables in a `.env` file inside the `backend` directory. These variables include the database connection details and any other configuration required by the application.
 
-Example format:
+### 3. Configure the Databases
 
-```env
-PORT=5000
-# Add your actual MySQL and MongoDB connection variables here.
-```
+**MySQL**
+- Start the MySQL server.
+- Create or import the database and tables required by the application.
+- Configure the MySQL connection details in the backend environment variables.
 
-Use the exact variable names expected by your backend code. Do not upload passwords, API keys, or other secrets to GitHub.
+**MongoDB**
+- Start the MongoDB service or configure the required MongoDB deployment.
+- Configure the MongoDB connection string in the backend environment variables.
 
-### 3. Configure MySQL
+The database configuration must match the application's existing backend code.
 
-1. Start your MySQL server.
-2. Open MySQL Workbench or your preferred MySQL client.
-3. Create or import the database used by the application.
-4. Create the required tables using your project's actual database schema.
-5. Configure the MySQL connection details in `backend/.env`.
-
-Ensure that the database name, username, password, and port match your local MySQL configuration.
-
-### 4. Configure MongoDB
-
-1. Start your MongoDB service or configure your MongoDB deployment.
-2. Add the appropriate MongoDB connection string to `backend/.env`.
-3. Ensure that the variable name matches the one used in your backend code.
-
-Never commit database credentials or connection strings containing secrets.
-
-### 5. Start the Backend
+### 4. Start the Backend Server
 
 From the `backend` directory, run:
 
@@ -113,11 +93,11 @@ From the `backend` directory, run:
 node server.js
 ```
 
-The backend is configured to run at `http://localhost:5000` in the local development setup, provided the required configuration and dependencies are correct.
+The backend uses port 5000 in the local development setup, subject to the application configuration.
 
-### 6. Start the Frontend
+### 5. Install Frontend Dependencies and Start the Application
 
-Open a **second terminal** in the project root and run:
+Open a separate terminal in the project root and run:
 
 ```bash
 cd frontend
@@ -125,42 +105,33 @@ npm install
 npm run dev
 ```
 
-Open the local URL displayed by Vite in your browser.
+Open the local development URL displayed in the terminal to access the frontend.
 
-Keep the backend and frontend terminals running while testing the application.
+Keep the backend server running while using the application.
 
-## Database Design and Documentation
+## Database Design
 
-ResumeIQ uses MySQL for relational data and MongoDB for NoSQL data, according to the project's configuration.
+The project uses MySQL as its relational database and MongoDB as its NoSQL database.
 
-The database documentation for the project should include:
-
-- Entity-Relationship (ER) diagram
-- Tables and their attributes
-- Primary keys and foreign keys
-- Constraints and relationships
-- Normalization
-- Sample SQL queries and their outputs
-
-Refer to the actual database schema and project configuration when preparing these materials.
+The database design covers the storage and management of resume information, job descriptions, and related analysis data according to the application's implementation.
 
 ## Version Control and Collaboration
 
-The project is maintained using Git and GitHub.
+Git and GitHub are used for source code management and collaborative development.
 
-Repository: https://github.com/adithlal23/ResumeIQ
+**GitHub Repository:** https://github.com/adithlal23/ResumeIQ
 
-Team members can clone the repository, work on assigned tasks, test changes, and contribute through Git commits and pushes.
+The repository contains the project source code and documentation to support development, testing, and collaboration among team members.
 
 ## Project Goal
 
-ResumeIQ aims to help job seekers understand how their resumes align with target roles, identify missing skills, and discover areas for improvement.
+The goal of ResumeIQ is to help job seekers understand how their resumes align with job requirements, identify skill gaps, and recognize opportunities to improve their resumes.
 
 ## Sustainable Development Goal
 
 **SDG 8 — Decent Work and Economic Growth**
 
-ResumeIQ supports this goal by helping job seekers evaluate their resumes against job requirements and identify skills they may need to improve.
+ResumeIQ aligns with SDG 8 by helping job seekers assess their resumes against job requirements and identify skills they may need to develop, supporting their preparation for employment opportunities.
 
 ## Author
 
