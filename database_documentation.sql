@@ -1,0 +1,20 @@
+USE resumeiq;
+SHOW TABLES;
+DESCRIBE users;
+DESCRIBE resumes;
+DESCRIBE jobs;
+DESCRIBE skills;
+DESCRIBE analysis;
+DESCRIBE recommendations;
+DESCRIBE resume_skills;
+DESCRIBE job_skills;
+USE resumeiq;
+
+SHOW CREATE TABLE users;
+SHOW CREATE TABLE resumes;
+SHOW CREATE TABLE jobs;
+SHOW CREATE TABLE skills;
+SHOW CREATE TABLE analysis;
+SHOW CREATE TABLE recommendations;
+SHOW CREATE TABLE resume_skills;
+SHOW CREATE TABLE job_skills;
