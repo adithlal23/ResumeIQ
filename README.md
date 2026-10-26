@@ -109,11 +109,19 @@ Open the local development URL displayed in the terminal to access the frontend.
 
 Keep the backend server running while using the application.
 
-## Database Design
+## Database Design and Management
 
-The project uses MySQL as its relational database and MongoDB as its NoSQL database.
+ResumeIQ uses MySQL to manage structured project data, including users, resumes, job descriptions, skills, analysis results, and recommendations.
 
-The database design covers the storage and management of resume information, job descriptions, and related analysis data according to the application's implementation.
+The database consists of eight related tables designed to organize information and maintain relationships between entities.
+
+Key database concepts used in the project include:
+- **Primary Keys:** Uniquely identify records in each table.
+- **Foreign Keys:** Maintain relationships between related tables.
+- **Many-to-Many Relationships:** Connect resumes with skills and jobs with skills through junction tables.
+- **SQL Queries:** Retrieve and organize data stored in the database.
+
+The project also includes MongoDB for NoSQL data storage.
 
 ## Version Control and Collaboration
 
@@ -134,5 +142,11 @@ The goal of ResumeIQ is to help job seekers understand how their resumes align w
 ResumeIQ aligns with SDG 8 by helping job seekers assess their resumes against job requirements and identify skills they may need to develop, supporting their preparation for employment opportunities.
 
 ## Author
+Team Contribution — Jestin Mathew
 
-GitHub: https://github.com/adithlal23
+Contributed to project documentation and reviewed the
+ResumeIQ database design.
+
+GitHub: https://github.com/adithlal23,
+https://github.com/Shree-Phalke2006.
+
